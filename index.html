@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Info -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="content-type" content="text/html">
+
+	<title>Select User</title>
+
+	<!-- Organic -->
+	<meta name="author" content="xhasu">
+	<meta name="description" content="frontend scaffold using stylus">
+
+	<!-- Viewport responsive -->
+	<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+
+	<!-- Webapp -->
+	<meta name="theme-color" content="#2196f3">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" sizes="192x192" href="webapp.png">
+	<link rel="manifest" href="manifest.json">
+
+	<!-- Favicon X-icon  -->
+	<link rel="icon" href="favicon.ico?v0.1">
+
+	<!-- Plugin Style -->
+	<!-- <link rel="stylesheet" href="https://unpkg.com/swiper/dist/css/swiper.min.css"> -->
+
+	<!-- Styles -->
+	<link rel="stylesheet" href="css/layout.min.css">
+	<link rel="stylesheet" href="css/application.min.css">
+
+	<!-- Custom Style -->
+	<link rel="stylesheet" href="css/custom.css">
+
+	<!-- Fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link href="https://fonts.googleapis.com/css?family=Fira+Sans&display=swap" rel="stylesheet">
+
+	<!-- Script Important -->
+</head>
+<body>
+		
+	<!-- app -->
+	<div id="app" class="page page-flex">
+
+		<div class="panel">
+
+			<div class="panel-head">
+				<div class="head-info animate go fadeIn">
+					<div class="info-title">Select user <span>2/6</span></div>
+					<div class="info-text">
+						<p>Add user to the dashboard so they can manage the content</p>
+					</div>
+				</div>
+				<div class="head-actions">
+					<button class="button button-main" id="selectAll">Select all</button>
+				</div>
+			</div>
+
+			<div class="panel-content animate go fadeInDown">
+				<div class="users">
+
+					<!-- repeatable [active] -->
+					<div class="user-card active">
+						<div class="user-avatar">
+							<img src="img/samuel-gordon.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Samuel Gordon</div>
+							<div class="info-jobtitle">Creative Director</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+					<div class="user-card">
+						<div class="user-avatar">
+							<img src="img/roger-simpson.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Roger Simpson</div>
+							<div class="info-jobtitle">UX Designer</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+					<div class="user-card active">
+						<div class="user-avatar">
+							<img src="img/joshua-may.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Joshua May</div>
+							<div class="info-jobtitle">Developer</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+					<div class="user-card">
+						<div class="user-avatar">
+							<img src="img/jack-huges.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Jack Huges</div>
+							<div class="info-jobtitle">Illustrator</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+					<div class="user-card">
+						<div class="user-avatar">
+							<img src="img/amy-nichols.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Amy Nichols</div>
+							<div class="info-jobtitle">Developer</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+					<div class="user-card active">
+						<div class="user-avatar">
+							<img src="img/mary-sanders.jpg" alt="">
+						</div>
+						<div class="user-info">
+							<div class="info-name">Mary Sanders</div>
+							<div class="info-jobtitle">UI/UX Designer</div>
+						</div>
+						<div class="user-check"><i class="material-icons">done</i></div>
+					</div>
+
+				</div>
+			</div>
+
+			<div class="panel-footer animate go fadeIn">
+				<div class="users-count">You will add <span>3</span> users</div>
+			</div>
+
+		</div>
+
+	</div>
+
+	<!-- plugins -->
+
+	<!-- user interface -->
+	<script src="js/ui.js"></script>
+</body>
+</html>

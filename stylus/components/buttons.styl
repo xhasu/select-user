@@ -1,0 +1,40 @@
+// Buttons 
+
+reset-button()
+	display inline-block
+	background-color transparent
+	border none
+	border-radius 0px
+	margin 0
+	padding 0
+	box-sizing border-box
+	text-align center
+	text-decoration none
+	vertical-align middle
+	color black
+	cursor pointer
+	outline none
+	transition all ease-out .4s
+	zoom 1
+	
+	&:hover
+	&:focus
+		outline none
+	
+	&:disabled
+		no-actions()
+		cursor not-allowed
+
+
+.button
+	reset-button()
+
+.button-main
+	text-align center
+	color color-purple
+	padding 10px 24px
+	font-size 12px
+	font-weight 300
+	line-height 1
+	border 1px solid color-purple
+	border-radius 25px

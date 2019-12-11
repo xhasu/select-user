@@ -1,0 +1,64 @@
+// Panel container
+
+.panel
+    center: 720px
+    background-color white
+    border-radius 12px
+    padding 50px 60px
+    overflow hidden
+    box-sizing border-box
+    box-shadow 0 0 16px alpha(black, .2)
+
+    +below($phone)
+        padding 20px 30px
+
+    &-head
+        position relative
+        display flex
+        justify-content space-between
+        align-items center
+        margin-bottom 48px
+        box-sizing border-box
+
+        +below($phone)
+            margin-bottom 24px
+            display block
+        
+        .head-info
+            padding-right 15px
+            +below($phone)
+                padding-right 0
+                margin-bottom 24px
+    
+        .info-title
+            font-size 32px
+            line-height 1.4
+            color black
+            +below($phone)
+                font-size 24px
+            span
+                font-weight 300
+                color color-purple
+                font-size 12px
+        
+        .info-text p
+            margin 0
+            color color-grey
+            font-size 14px
+            line-height 1.2
+        
+        .head-actions
+            flex-shrink 0
+            +below($phone)
+                text-align right
+    
+    &-content
+        position relative
+        margin-bottom 48px
+        +below($phone)
+            margin-bottom 24px
+    
+    &-footer
+        position relative
+        text-align right
+        z-index 1

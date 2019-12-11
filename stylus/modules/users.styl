@@ -1,0 +1,75 @@
+
+.users
+    position relative
+    display flex
+    flex-wrap wrap
+    align-items center
+    justify-content space-around
+
+    &-count
+        span
+            font-weight 700
+
+.user
+    &-card
+        position relative
+        display flex
+        flex-basis 190px
+        padding 15px 20px
+        margin 5px
+        border-radius 8px
+        border 1px solid alpha(black, .1)
+        background-color white
+        cursor pointer
+        transition all 400ms ease-out
+        box-sizing border-box
+
+        &:hover
+        &.active
+            box-shadow 0 0 8px alpha(color-grey, .4)
+
+    &-avatar
+        position relative
+        size: 30px
+        border-radius 100%
+        overflow hidden
+        background-color darken(white, 60%)
+        object-fit cover
+        img
+            box-center()
+            display block
+            size: 100%
+            object-fit cover
+
+    &-info
+        padding-left 10px
+        text-align left
+        box-sizing border-box
+        .info-name
+            font-size 14px
+            line-height 1.2
+            color black
+        .info-jobtitle
+            font-size 12px
+            line-height 1.2
+            color color-grey
+    
+    &-check
+        absolute: top -9px right -9px
+        size: 18px
+        line-height 1.2
+        border-radius 100%
+        border 1px solid alpha(black, .1)
+        background-color white
+        text-align center
+        transition all 400ms ease-out
+        z-index 1
+        i.material-icons
+            font-size 14px
+            color white
+
+// [states: active,]
+.user-card.active
+    .user-check
+        background-color color-purple
+        border-color color-purple
